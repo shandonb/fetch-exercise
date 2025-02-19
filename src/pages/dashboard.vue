@@ -306,6 +306,7 @@
   const showAll = ref<boolean>(false);
   const searchFilters = ref([0, 1])
   const { mdAndDown } = useDisplay();
+  const isMobile = computed(() => mdAndDown.value)
   const openFilters = ref<boolean | null>(null)
   const breedDialog = ref(false);
   const breedsPerPage = 40;
@@ -413,6 +414,9 @@
       }
     } catch (error) {
       console.error("Error fetching dogs: ", error)
+    }
+    if (isMobile.value) {
+      openFilters.value = false;
     }
   };
 

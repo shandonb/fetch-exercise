@@ -2,7 +2,7 @@
 ### Fetch Rewards Take-Home Exercise
 
 This project was built using Vue 3 (Composition API, TypeScript), Vuetify, and Vite.
-Additional components used include [Vue Leaflet](https://github.com/vue-leaflet/vue-leaflet) (Map integration), [Pinia](https://pinia.vuejs.org/) (State management), and [Vue Confetti Explosion](https://github.com/valgeirb/vue-confetti-explosion) (Visual effects).
+Additional components used include [Vue Leaflet](https://github.com/vue-leaflet/vue-leaflet) (Map integration), [Pinia](https://pinia.vuejs.org/) (State management), [Vee Validate](https://vee-validate.logaretm.com/v4/) (Form validation), and [Vue Confetti Explosion](https://github.com/valgeirb/vue-confetti-explosion) (Visual effects).
 
 ## To Run Locally
 ### 1) Clone the repository
