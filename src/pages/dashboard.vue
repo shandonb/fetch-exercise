@@ -161,14 +161,16 @@
         />
       </v-card>
     </v-dialog>
-    <v-container class="d-flex justify-center">
+    <v-footer 
+      class="d-flex justify-center"
+    >
       <v-btn
         text="Fetch Friends"
         class="ma-6"
         color="purple"
         @click="fetchDogs"
       />
-    </v-container>
+    </v-footer>
   </v-navigation-drawer>
   <v-container>
     <v-row v-if="favStore.fullFavorites">

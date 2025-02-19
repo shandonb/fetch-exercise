@@ -1,12 +1,12 @@
 <template>
   <v-card
-    width="100%"
-    max-width="800px"
+    width="90%"
+    max-width="500px"
     class="pa-6"
   >
     <v-img
       :src="dogImage"
-      height="500px"
+      aspect-ratio="1"
       cover
     />
     <v-card-title class="text-lg-h4">
@@ -23,6 +23,7 @@
       <v-col 
         cols="6"
         md="4"
+        class="d-flex justify-end"
       >
         <v-btn @click="dogRedirect">
           Details
@@ -31,6 +32,7 @@
       <v-col 
         cols="6"
         md="4"
+        class="d-flex justify-start"
       >
         <v-btn
           v-if="!isFavorite"

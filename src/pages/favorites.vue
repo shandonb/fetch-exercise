@@ -34,7 +34,7 @@
     </v-row>
     <v-row class="d-flex justify-center">
       <v-col
-        cols="4"
+        cols="6"
         md="3"
         class="d-flex justify-end"
       >
@@ -46,7 +46,7 @@
         />
       </v-col>
       <v-col
-        cols="4"
+        cols="6"
         md="3"
       >
         <v-btn
@@ -61,7 +61,8 @@
   </v-container>
   <v-dialog
     v-model="matchOverlay"
-    width="50%"
+    width="100%"
+    max-width="750px"
   >
     <ConfettiExplosion 
       v-if="visible" 

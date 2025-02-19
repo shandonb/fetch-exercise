@@ -15,13 +15,19 @@
       <!-- <span> {{ dogDetails.name }}</span> -->
       <v-container>
         <v-row>
-          <v-col cols="8">
+          <v-col 
+            cols="12" 
+            lg="8"
+          >
             <v-img
               :src="dogDetails.img"
               contain
             />
           </v-col>
-          <v-col cols="4">
+          <v-col 
+            cols="12"
+            md="4"
+          >
             <v-container>
               <v-row class="justify-center">
                 <span class="text-h1"> {{ dogDetails.name }}</span>
@@ -37,7 +43,7 @@
                   class="justify-end"
                   cols="4"
                 >
-                  <span class="text-h5">{{ dogLocation?.city }}, {{ dogLocation?.state }}</span>
+                  <span class="text-h5">{{ dogLocation?.city }}, {{ dogLocation?.state }} {{ dogLocation?.zip_code }}</span>
                 </v-col>
               </v-row>
               <v-row>
@@ -47,17 +53,6 @@
               </v-row>
               <v-row>
                 <v-col>
-                  <!-- <l-map
-                    ref="map"
-                    v-model:zoom="zoom"
-                    :center="[dogLocation?.latitude, dogLocation?.longitude]"
-                  >
-                    <l-tile-layer
-                      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                      layer-type="base"
-                      name="OpenStreetMap"
-                    />
-                  </l-map> -->
                   <LocationMap
                     v-if="dogLocation"
                     :lat="dogLocation?.latitude"
